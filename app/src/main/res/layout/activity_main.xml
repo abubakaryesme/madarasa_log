@@ -20,13 +20,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="111dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
+        android:layout_marginEnd="152dp"
         android:layout_marginBottom="27dp"
         android:text="Select"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/std_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/git_link"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/madarasa" />
 
@@ -89,10 +91,22 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="115dp"
-        app:layout_constraintBottom_toTopOf="@+id/std_spinner"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/git_link"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/madarasa"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/madarasa" />
+
+    <ImageButton
+        android:id="@+id/git_link"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="491dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_baseline_link_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

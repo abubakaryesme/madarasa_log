@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btn_show_records = findViewById(R.id.vw_log);
         btn_add_record= findViewById(R.id.add_log);
 
-//        git_link = findViewById(R.id.git_link);
+        git_link = findViewById(R.id.git_link);
         dbHandler=new DbHandler(this);
         List<Student> students = dbHandler.selectAllStudents();
 
@@ -184,14 +185,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        git_link.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Uri webpage = Uri.parse("https://github.com/AqibAmin/MadrasaRegister");
-//                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-//                startActivity(intent);
-//            }
-//        });
+        git_link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri webpage = Uri.parse("");
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+            }
+        });
     }
 
 
