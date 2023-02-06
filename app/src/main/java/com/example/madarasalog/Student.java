@@ -7,7 +7,7 @@ public class Student {
     private String name;
     private String rollNo;
 
-    public Student(Integer id, String name, String rollNo, String joining) {
+    public Student(Integer id, String name, String rollNo) {
         this.id = id;
         this.name = name;
         this.rollNo = rollNo;
